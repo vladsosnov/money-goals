@@ -23,31 +23,29 @@ module.exports = {
       xl: '1280px'
     },
     colors: {
-      transparent: 'transparent',
       current: 'currentColor',
-      black: {
-        default: '#1d2434'
-      },
-      white: {
-        default: '#ffffff'
-      },
+      alto: { default: '#cecece' },
+      black: { default: '#000000' },
       gray: {
-        dark: '#b9b9b9',
-        light: '#f6f7f8',
-        blue: '#dbe2ea',
-        100: '#f5f5f5',
-        200: '#eeeeee',
-        300: '#e0e0e0',
-        400: '#bdbdbd',
-        500: '#9fa2a6',
-        600: '#757575',
-        700: '#616161',
-        800: '#424242',
-        900: '#212121'
+        default: '#c5c5c5',
+        active: '#dadada',
+        slate: '#6e7591',
+        polo: '#92a1ca',
+        ebony: '#22293c',
+        nobel: '#b6b6b6'
       },
-      yellow: {
-        default: '#ffbf13'
-      }
+      green: {
+        default: '#509b4a',
+        active: '#116C09'
+      },
+      martinique: { default: '#2d3450' },
+      mirage: {
+        default: '#212842',
+        active: '#404865'
+      },
+      transparent: 'transparent',
+      white: { default: '#ffffff' },
+      red: { default: '#ff0000' }
     },
     spacing: {
       px: '1px',
@@ -59,15 +57,9 @@ module.exports = {
       5: '1.25rem', // 20px
       6: '1.5rem', // 24px
       8: '2rem', // 32px
-      10: '2.5rem', // 40px
       12: '3rem', // 48px
       16: '4rem', // 64px
-      18: '4.5rem', // 72px
-      20: '5rem', // 80px
-      22: '5.5rem', // 88px
-      24: '6rem', // 96px
-      32: '8rem', // 128px
-      40: '10rem' // 160px
+      32: '8rem' // 128px
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
