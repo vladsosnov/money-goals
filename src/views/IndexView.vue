@@ -1,5 +1,5 @@
 <template>
-  <div class="index-view bg-blue-500">
+  <div class="index-view">
     Index View
   </div>
 </template>
