@@ -1,5 +1,5 @@
 <template>
-  <div class="index-view text-martinique">
+  <div class="index-view">
     Index View
   </div>
 </template>

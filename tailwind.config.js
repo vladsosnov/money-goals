@@ -28,15 +28,14 @@ module.exports = {
       black: { default: '#000000' },
       gray: {
         default: '#c5c5c5',
-        active: '#dadada',
         slate: '#6e7591',
         polo: '#92a1ca',
         ebony: '#22293c',
         nobel: '#b6b6b6'
       },
       green: {
-        default: '#509b4a',
-        active: '#116C09'
+        default: '#68bf66',
+        active: '#428f41'
       },
       martinique: { default: '#2d3450' },
       mirage: {

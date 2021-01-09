@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vs-button {
+  padding: 15px 40px;
+
+  border-radius: 10px;
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #000;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.vs-button:focus {
+  outline: none;
+}
+
+.vs-button:hover {
+  background-color: #c5c5c5;
+}
+
+.vs-input {
+  max-height: 45px;
+
+  padding: 12px 18px;
+
+  border-radius: 4px;
+
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+
+  border: none;
+  outline: none;
+
+  transition: box-shadow 0.2s ease-in;
+}
+
+.vs-input:hover,
+.vs-input:focus {
+  box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vs-input::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+
+  color: #b6b6b6;
+}
+
+.vs-shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
