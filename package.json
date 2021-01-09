@@ -19,6 +19,11 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "lint-staged": "^10.1.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-junit-formatter": "^0.2.2",
+    "stylelint-scss": "^3.16.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -44,20 +49,13 @@
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/standard",
-      "@vue/typescript/recommended"
+  "lint-staged": {
+    "*.{vue,scss}": [
+      "stylelint"
     ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {}
+    "*.{ts,js,vue}": [
+      "npm run lint:scripts"
+    ]
   },
   "browserslist": [
     "> 1%",
