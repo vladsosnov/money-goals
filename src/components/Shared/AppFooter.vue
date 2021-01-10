@@ -1,6 +1,6 @@
 <template>
-  <footer class="">
-    <h3 class="">
+  <footer class="py-8 vs-gradient">
+    <h3 class="text-gray text-base sm:text-lg font-medium text-center">
       © Money Goals 2020 – 2021
     </h3>
   </footer>
