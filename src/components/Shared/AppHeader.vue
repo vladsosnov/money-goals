@@ -1,6 +1,6 @@
 <template>
   <header class="">
-    Header
+    logo nav actions
   </header>
 </template>
 
