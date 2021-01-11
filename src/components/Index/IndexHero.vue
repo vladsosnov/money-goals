@@ -5,6 +5,7 @@
         <a
           href="https://www.instagram.com/vlade4ek_s/"
           rel="noopener nofollow"
+          target="_blank"
         >
           <img
             src="@/assets/images/index/instagram.svg"
@@ -17,6 +18,7 @@
         <a
           href="https://twitter.com/Vlad39913765"
           rel="noopener nofollow"
+          target="_blank"
         >
           <img
             src="@/assets/images/index/twitter.svg"
@@ -29,6 +31,7 @@
         <a
           href="https://github.com/vladsosnov"
           rel="noopener nofollow"
+          target="_blank"
         >
           <img
             src="@/assets/images/index/github.svg"
