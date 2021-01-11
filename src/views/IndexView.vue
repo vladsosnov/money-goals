@@ -1,13 +1,18 @@
 <template>
-  <div class="index-view">
-    Index View
-  </div>
+  <main class="index-view">
+    <index-hero />
+  </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
+import IndexHero from '@/components/Index/IndexHero.vue'
+
 export default Vue.extend({
-  name: 'IndexView'
+  name: 'IndexView',
+  components: {
+    IndexHero
+  }
 })
 </script>

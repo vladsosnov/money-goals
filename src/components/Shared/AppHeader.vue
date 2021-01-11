@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header vs-gradient">
+  <header class="app-header">
     <div class="container py-3 px-2 sm:px-4 flex justify-between items-center">
       <router-link :to="{ name: 'Index' }">
         <img

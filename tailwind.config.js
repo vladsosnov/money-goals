@@ -59,6 +59,7 @@ module.exports = {
       10: '2.5rem', // 40px
       12: '3rem', // 48px
       16: '4rem', // 64px
+      28: '7rem', // 112px
       32: '8rem' // 128px
     },
     backgroundColor: (theme) => theme('colors'),
