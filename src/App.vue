@@ -37,8 +37,12 @@ export default Vue.extend({
 
 <style lang="scss">
 .app {
-  height: 100vh;
+  height: 100%;
   font-family: Roboto, sans-serif;
+
+  @media (min-width: 1024px) {
+    min-height: 100vh;
+  }
 
   &--gradient {
     background: linear-gradient(to right, #212842 0%, #212842 20%, #161b2f 20%, #161b2f 100%);

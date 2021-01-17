@@ -1,6 +1,6 @@
 <template>
-  <section class="index-hero container px-2 sm:px-4 flex justify-between items-center">
-    <ul class="space-y-6 flex flex-col">
+  <section class="index-hero container px-2 sm:px-4 flex justify-between items-center flex-col-reverse lg:flex-row">
+    <ul class="space-y-0 lg:space-y-6 space-x-4 lg:space-x-0 flex flex-row lg:flex-col items-center">
       <li>
         <a
           href="https://www.instagram.com/vlade4ek_s/"
@@ -41,19 +41,26 @@
         </a>
       </li>
     </ul>
-    <div class="max-w-md">
-      <h2 class="mb-6 text-2xl font-bold text-gray uppercase">
+    <div class="max-w-md ml-0 lg:ml-12 text-center lg:text-left">
+      <h2 class="mb-6 text-base md:text-xl lg:text-2xl font-bold text-gray uppercase">
         Vlad Sosnov
       </h2>
-      <h1 class="mb-6 md:mb-12 text-2xxl font-bold text-gray">
+      <h1 class="mb-6 md:mb-12 text-2xl lg:text-2xxl font-bold text-gray">
         Do your
         <span class="text-gray-polo">
-          money goals
+          money goals <br>
         </span>
         with ease
       </h1>
+      <img
+        src="@/assets/images/index/hero.jpg"
+        srcset="@/assets/images/index/hero.jpg 1x, @/assets/images/index/hero@2x.jpg 2x"
+        alt="Hero image"
+        class="mb-6 block lg:hidden rounded-8"
+      >
       <button
         class="
+          mx-auto lg:mx-0 mb-6 lg:mb-0
           py-3 sm:py-4 px-4 sm:px-10
           flex justify-center items-center
           text-white text-base sm:text-xl font-semibold
@@ -66,12 +73,14 @@
         Join now
       </button>
     </div>
-    <img
-      src="@/assets/images/index/hero.jpg"
-      srcset="@/assets/images/index/hero.jpg 1x, @/assets/images/index/hero@2x.jpg 2x"
-      alt="Hero image"
-      class="rounded-8"
-    >
+    <div>
+      <img
+        src="@/assets/images/index/hero.jpg"
+        srcset="@/assets/images/index/hero.jpg 1x, @/assets/images/index/hero@2x.jpg 2x"
+        alt="Hero image"
+        class="index-hero__image mx-auto rounded-8"
+      >
+    </div>
   </section>
 </template>
 
@@ -87,3 +96,20 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.index-hero {
+  &__image {
+    max-width: 75%;
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+
+    @media (min-width: 1280px) {
+      max-width: 100%;
+    }
+  }
+}
+</style>
