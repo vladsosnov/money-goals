@@ -1,5 +1,9 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    class="app flex flex-col justify-between"
+    :class="{ 'app--gradient': isAuthorized }"
+  >
     <app-header />
     <transition
       name="fade"
@@ -22,13 +26,27 @@ export default Vue.extend({
   components: {
     AppHeader,
     AppFooter
+  },
+  computed: {
+    isAuthorized (): boolean {
+      return true
+    }
   }
 })
 </script>
 
 <style lang="scss">
-#app {
+.app {
+  height: 100%;
   font-family: Roboto, sans-serif;
+
+  @media (min-width: 1024px) {
+    min-height: 100vh;
+  }
+
+  &--gradient {
+    background: linear-gradient(to right, #212842 0%, #212842 20%, #161b2f 20%, #161b2f 100%);
+  }
 
   .fade-enter-active,
   .fade-leave-active {

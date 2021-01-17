@@ -1,9 +1,9 @@
 <template>
-  <header class="app-header vs-gradient">
+  <header class="app-header">
     <div class="container py-3 px-2 sm:px-4 flex justify-between items-center">
       <router-link :to="{ name: 'Index' }">
         <img
-          src="@/assets/images/shared/logo.png"
+          src="@/assets/images/shared/logo.svg"
           alt="Site Logo"
           class="app-header__logo"
         >
@@ -74,6 +74,7 @@ export default Vue.extend({
 .app-header {
   &__logo {
     max-width: 50px;
+    width: 100%;
 
     @media (min-width: 640px) {
       max-width: 60px;
